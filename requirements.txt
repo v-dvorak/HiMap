@@ -1,0 +1,10 @@
+certifi==2024.2.2
+charset-normalizer==3.3.2
+colorama==0.4.6
+geographiclib==2.0
+geopy==2.4.1
+idna==3.7
+pillow==10.3.0
+requests==2.31.0
+tqdm==4.66.2
+urllib3==2.2.1
