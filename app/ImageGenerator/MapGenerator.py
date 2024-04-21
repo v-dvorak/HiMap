@@ -44,7 +44,7 @@ def make_map(start: tuple[float, float], width: int, height: int, x_growth: floa
         Utils.generate_matrix_image([home / (str(i) + ".png") for i in range(height * width)],
                                     (height, width), output_path=output_path, resize=True)
     else:
-        rows, columns = width, height
+        rows, columns = height, width
         # dimensions of the final image
         image_width, image_height = 640, 614
         final_width = image_width * columns
@@ -62,7 +62,7 @@ def make_map(start: tuple[float, float], width: int, height: int, x_growth: floa
                 image = Utils.load_image_from_url(url)
 
                 row = im_num // columns
-                col = im_num  % columns
+                col = im_num % columns
                 x_offset = col * image_width
                 y_offset = row * image_height
 
