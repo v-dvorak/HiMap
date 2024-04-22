@@ -59,7 +59,7 @@ def make_map(start: tuple[float, float], width: int, height: int, x_growth: floa
             y = y_base
             for j in range(width):
                 url = Utils.get_static_request(api_key, (x, y), zoom, size, style)
-                image = Utils.load_image_from_url(url)
+                image = Utils.load_image_from_url(url).crop((0, 0, 640, 614))
 
                 row = im_num // columns
                 col = im_num % columns
