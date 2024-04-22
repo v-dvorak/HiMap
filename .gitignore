@@ -1,6 +1,9 @@
 # api key
 api_key.txt
 
+# pycharm
+.idea
+
 # style
 style.json
 
